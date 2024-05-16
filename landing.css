@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.img img {
+    border-radius: 25px;
+    width: 40vw;
+    object-fit: fill;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img {
+    align-items: center;
+    width: 50%;
+    align-self: left;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(231, 246, 227);
+    height: 100%;
+}
+
+.logotext {
+    font-family: "Aladin", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo img {
+    width: 40%;
+    margin: 5px;
+}
+
+.signup {
+    height: 100%;
+    width: 50%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    width: 20%;
+    height: 20px;
+    margin: 20px;
+    align-items: center;
+}
+
+.create {
+    text-align: center;
+    align-self: center;
+    width: 80%;
+    height: 5%;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.name {
+    width: 410px;
+    height: 12%;
+}
+
+.text {
+    font-size: 0.8rem;
+}
+
+.email input {
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 25px;
+    padding-right: 220px;
+    border: 1px solid grey;
+    font-size: 0.8rem;
+    background-image: url("assets/email.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.name input {
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 25px;
+    padding-right: 220px;
+    border: 1px solid grey;
+    font-size: 0.8rem;
+    background-image: url("assets/person.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.password input {
+    border-radius: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 25px;
+    padding-right: 220px;
+    border: 1px solid grey;
+    font-size: 0.8rem;
+    background-image: url("assets/password.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.email {
+    width: 410px;
+    height: 12%;
+}
+
+.password {
+    width: 410px;
+    height: 12%;
+}
+
+button a {
+    text-decoration: none;
+    color: white
+}
+
+button a:visited {
+    color: white
+}
+
+.sign {
+    background-color: rgb(115, 136, 92);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 170px;
+    padding-left: 170px;
+    border-width: 0;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 410px;
+    align-self: center;
+}
+
+.or {
+    color: grey;
+    margin: 20px;
+
+}
+
+button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(133, 156, 109);
+
+}
+
+button:active {
+    background-color: white;
+    color: rgb(115, 136, 92);
+    border: 2px solid rgb(115, 136, 92);
+    padding: 3.5px;
+
+    a {
+        color: rgb(115, 136, 92);
+    }
+}
+
+.already a {
+    text-decoration: none;
+    color: rgb(115, 136, 92);
+    font-weight: 600;
+}
+.already a:hover{
+   text-decoration: underline;
+}
+
+.already a:visited {
+    color: rgb(115, 136, 92);
+}
+
+.already {
+    width: 80%;
+    display: flex;
+    height: 20px;
+    justify-content: center;
+}
+
+.accounts {
+    width: 80%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    margin-bottom: 10px;
+}
+
+.google {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url("assets/google.svg");
+    background-size: contain;
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.facebook {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-size: contain;
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.2);
+    background: url("assets/facebook.svg");
+    background-size: contain;
+    /* Adjust the background size as needed */
+    background-repeat: no-repeat;
+    background-position: center;
+    fill: blue;
+    cursor: pointer;
+}
+
+.apple {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url("assets/apple.svg");
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    background-size: auto;
+    /* Adjust the background size as needed */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+@media screen and (max-width:1001px) {
+    .sign {
+        padding: 2px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    button:active {
+        padding: 0;
+
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .name,
+    .email,
+    .password {
+        width: 380px;
+        height: 80px;
+    }
+
+    .sign {
+        width: 380px;
+    }
+
+    .name input,
+    .email input,
+    .password input {
+        padding-right: 190px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .name,
+    .email,
+    .password {
+        width: 300px;
+        height: 70px;
+    }
+
+    .sign {
+        width: 300px;
+    }
+
+    .name input,
+    .email input,
+    .password input {
+        padding-right: 110px;
+    }
+}
+@media screen and (max-width:1050) , (min-width:800px){
+    .email , .name , .password{
+        height: 60px;
+    }
+}
+@media screen and (max-width: 650px) {
+
+    .name,
+    .email,
+    .password {
+        width: 200px;
+        height: 60px;
+    }
+
+    .sign {
+        width: 200px;
+    }
+
+    .name input,
+    .email input,
+    .password input {
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .already {
+        font-size: 0.8rem;
+    }
+}
+
+.logo1 .logotext1 {
+    display: none;
+}
+
+.logo1 img {
+    display: none;
+}
+
+
+
+@media screen and (max-width:600px) {
+    .logo1 .logotext1 {
+        height: 10px;
+        display: inline-block;
+    }
+
+    .logo1 img {
+        display: inline-block;
+    }
+
+    .logo1 {
+        margin: 15px;
+    }
+
+
+    .logo .logotext {
+        display: none;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img {
+        background-color: white;
+        width: 100vw;
+        height: auto;
+    }
+
+    .img img {
+        width: 70vw;
+    }
+
+    .signup {
+        margin-top: 0;
+    }
+
+    .create {
+        margin-bottom: 20px;
+    }
+
+    .name,
+    .email,
+    .password {
+        width: 300px;
+        height: 60px;
+    }
+
+    .sign {
+        width: 300px;
+    }
+
+    .name input,
+    .email input,
+    .password input {
+        padding-right: 110px;
+    }
+
+    .already {
+        width: 200px;
+    }
+
+    input {
+        padding-top: 5px;
+    }
+
+    .logo {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    input {
+      padding-right: 300px; 
+    }
+  }
